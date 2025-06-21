@@ -3,50 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <title>💌 Healing Letter</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #a2c7e5, #e0f1ff);
-      color: #0d2c4d;
+      background: linear-gradient(135deg, #fff4e6 0%, #ffe4c4 100%);
+      font-family: 'Lora', serif;
+      color: #5a432e;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       min-height: 100vh;
     }
 
     .letter {
-      background: rgba(255, 255, 255, 0.8);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      border-radius: 16px;
-      padding: 40px;
-      max-width: 700px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      max-width: 600px;
       width: 90%;
-      line-height: 1.8;
-      font-size: 1.1rem;
-      backdrop-filter: blur(6px);
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      backdrop-filter: blur(8px);
     }
 
     .letter h1 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-      color: #104e8b;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #b25a2c;
+      text-align: center;
     }
 
-    .quote {
+    .letter p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .letter .quote {
       font-style: italic;
-      margin: 20px 0;
-      padding-left: 20px;
-      border-left: 3px solid #6da7d9;
-      color: #1f4e79;
+      margin: 1.5rem 0;
+      padding: 1rem 1.5rem;
+      background: #fff0e6;
+      border-left: 5px solid #b25a2c;
     }
 
-    .signature {
+    .letter .signature {
       text-align: right;
-      margin-top: 30px;
+      margin-top: 2rem;
       font-weight: bold;
-      color: #2c5d8a;
+      color: #874021;
     }
   </style>
 </head>
@@ -72,7 +79,9 @@
     <p>Người ấy có thể quay lại, hoặc không.<br>
     Nhưng bạn nhất định sẽ còn ở lại với chính mình – lâu hơn bất kỳ ai khác.</p>
 
-    <p class="quote">"Sự kết thúc không phải là mất – mà là mở cửa cho điều trọn vẹn hơn đến đúng lúc."</p>
+    <div class="quote">
+      <p>"Sự kết thúc không phải là mất – mà là mở cửa cho điều trọn vẹn hơn đến đúng lúc."</p>
+    </div>
 
     <p>Nếu bạn chọn rời đi, không ai gọi đó là thất bại.<br>
     Đó là sự tự cứu – bằng lòng can đảm lặng lẽ.</p>
